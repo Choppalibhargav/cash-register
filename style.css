@@ -1,5 +1,107 @@
-.container{
-    display: flex;
-    flex-direction: column;
-    width: 50vw;
+@import url('https://fonts.googleapis.com/css2?family=Cookie&display=swap');
+
+:root {
+    --primary-color: #FCD34D;
+    --secondary-color: #3B82F6;
+    --black: #111827;
+}
+
+h1 {
+    text-align: center;
+    color: var(--secondary-color);
+}
+
+input {
+    font-size: 14px;
+    outline: #fff;
+    padding: 1.5rem;
+    margin: auto;
+    border: 2px solid var(--primary-color);
+    border-radius: 0.5rem;
+    width: 50%;
+    text-align: center;
+}
+
+#nxtBtn {
+    background-color: var(--secondary-color);
+    border: none;
+
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+
+    font-size: 16px;
+    cursor: pointer;
+    display: block;
+    margin: auto;
+    margin-top: 1rem;
+}
+
+#showBtn {
+    display: block;
+    margin: auto;
+    margin-top: 1rem;
+    background-color: var(--secondary-color);
+    border: none;
+
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+
+    font-size: 16px;
+    cursor: pointer;
+
+}
+
+table {
+    width: 50%;
+    text-align: center;
+    border-collapse: collapse;
+    margin: auto;
+    display: block;
+}
+
+th,
+td {
+    border: 2px solid var(--black);
+    width: 0%;
+    margin: auto;
+    padding: 0.4rem;
+    text-align: center;
+    border-collapse: collapse;
+    font-size: 1.5rem;
+}
+
+
+body {
+    background-color: var(--primary-color);
+    font-family: 'Cookie', cursive;
+    text-align: center;
+    margin: auto;
+    max-width: 100vh;
+}
+
+p {
+    font-size: large;
+    padding-left: auto;
+    font-size: 2rem;
+    text-align: center;
+}
+
+label {
+    font-size: 2rem;
+    margin: auto;
+    text-align: center;
+    padding-top: 2rem;
+    display: block;
+}
+
+caption {
+    font-size: 2rem;
+    text-align: center;
+    margin: auto;
+    display: block;
+    padding-right: 4rem;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
 }

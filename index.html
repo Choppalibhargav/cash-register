@@ -1,49 +1,66 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./style.css">
-    <title>Cash Register</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>🤑Cash register🤑</title>
+    <link rel="stylesheet" href="style.css" />
 </head>
+
 <body>
-    <div class="container">
-        <h1 class="heading">🤑Cash Register Manager🤑</h1>
-        <p class="Description">
-            Enter the Amount given for the bill by customer and return the remaining amount in minimum number of notes
+    <div class="main-section">
+        <h1 class="heading">🤑Cash register🤑</h1>
+        <p class="introduction">
+            Enter the bill amount and enter the cash amount given by customer and kindly return the remaining amount
         </p>
-        <label for="bill-amount">Bill Amount</label>
-        <input id="bill-amount" type="text"/>
-        <label for="cash-given">Cash Given</label>
-        <input id="cash-given" type="text" />
-        <button id="check-button">check</button>
-        <table class="change-table">
-        <caption>
-            Return Change
-        </caption>
-        <tr>
-            <th>No of notes</th>
-            <td class="no-of-notes"></td>
-            <td class="no-of-notes"></td>
-            <td class="no-of-notes"></td>
-            <td class="no-of-notes"></td>
-            <td class="no-of-notes"></td>
-            <td class="no-of-notes"></td>
-            <td class="no-of-notes"></td>
-        </tr>
-        <tr>
-            <th>Note</th>
-            <td>2000</td>
-            <td>500</td>
-            <td>100</td>
-            <td>20</td>
-            <td>10</td>
-            <td>5</td>
-            <td>1</td>
-        </tr>
+        <label for="billAmt"> Bill Amount:</label>
+        <input type="text" id="billAmt"> </input>
+        <div id="hide">
+            <button id="nxtBtn">Next</button> </div>
+        <label for="cashGiven" id="cashh" style="display: none;"> Cash Given:</label>
+        <input type="text" id="cashGvn" />
+        <button id="showBtn">Check</button>
+
+        <table id="table-notes" style="display: none;">
+            <tbody id="division">
+
+                <p id="error-message"></p>
+
+                <caption id="caption">
+                    Return Change
+                </caption>
+                <tr class="active">
+                    <th>No of Notes</th>
+
+                    <td class="no-of-notes"></td>
+                    <td class="no-of-notes"></td>
+                    <td class="no-of-notes"></td>
+                    <td class="no-of-notes"></td>
+                    <td class="no-of-notes"></td>
+                    <td class="no-of-notes"></td>
+                    <td class="no-of-notes"></td>
+                </tr>
+                <tr id="row">
+                    <th>Notes</th>
+                    <td>2000</td>
+                    <td>500</td>
+                    <td>100</td>
+                    <td>20</td>
+                    <td>10</td>
+                    <td>5</td>
+                    <td>1</td>
+                </tr>
         </table>
+        </tbody>
     </div>
-    <script src="./app.js" type="text/javascript"></script>
+
+
+    <script src="/app.js"></script>
+
+
+
+
 </body>
+
 </html>
