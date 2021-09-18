@@ -5,32 +5,32 @@ const checkButton = document.querySelector("#showBtn");
 const message = document.querySelector("#error-message");
 const notes = document.querySelectorAll(".no-of-notes");
 const tableHide = document.querySelector("#table-notes");
-const csh = document.querySelector("#cashh");
+const cash = document.querySelector("#cashh");
 
 
 const availableNotes = [2000, 500, 100, 20, 10, 5, 1];
 
-nxtbutton.addEventListener("click", checkAbc);
+nxtbutton.addEventListener("click", checkNext);
 
 
 
 
 
-checkButton.addEventListener("click", checkLegality); // Adding a function on click of an event of click
+checkButton.addEventListener("click", checkLegality);
 cashGiven.style.display = "none";
 
 checkButton.style.display = "none";
 
 
-function checkAbc() {
+function checkNext() {
   cashGiven.style.display = "block";
 
   checkButton.style.display = "block";
-  csh.style.display = "block";
+  cash.style.display = "block";
 }
 
 
-function checkLegality() { //function to check wrong input
+function checkLegality() { 
   message.style.display = "none";
 
 
@@ -49,12 +49,12 @@ function checkLegality() { //function to check wrong input
   }
 }
 
-function errorMessage(msg) { //function to display error message
+function errorMessage(msg) { 
   message.style.display = "block";
   message.innerHTML = msg;
 }
 
-function calculateChange(amtreturn) { //function of calculate change amount to be returned
+function calculateChange(amtreturn) { 
   for (let i = 0; i < availableNotes.length; i++) {
     const numberofNotes = Math.trunc(
       amtreturn / availableNotes[i]
